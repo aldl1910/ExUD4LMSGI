@@ -1,0 +1,45 @@
+<cs:schema xmlns:cs="https://www.ferpiel.com/" version="0.1" xml:lang="es">
+    <cs:element name="sucursal">
+        <cs:complexType>
+            <cs:sequence>
+                <cs:element name="exposicion" masOccurs="unbounded">
+                    <cs:complexType>
+                        <cs:sequence>
+                            <cs:element name="pedido" masOccurs="unbounded">
+                                <cs:complexType>
+                                    <cs:sequence>
+                                        <cs:element name="datos" type="string"/>
+                                        <cs:element name="direcciones" type="string"/>
+                                        <cs:element name="codigo" type="string"/>
+                                        <cs:element name="NomTra" type="string"/>
+                                        <cs:element name="fecha" type="date"/>
+                                        <cs:element name="Obs" type="boolean"/>
+                                    </cs:sequence>
+                                </cs:complexType>
+                            </cs:element>
+                            <cs:element name="articulos" masOccurs="unbounded">
+                                <cs:complexType>
+                                    <cs:sequence>
+                                        <cs:element name="cod" type="string"/>
+                                        <cs:element name="UniPed" type="string"/>
+                                        <cs:element name="Precio" type="decimal"/>
+                                        <cs:element name="Obse" type="string"/>
+                                        <cs:element name="Plazo" type="dateTime"/>
+                                    </cs:sequence>
+                                </cs:complexType>
+                            </cs:element>
+                        </cs:sequence>
+                    </cs:complexType>
+                </cs:element>
+                <cs:element name="gestion" masOccurs="unbounded">
+                    <cs:complexType>
+                        <cs:sequence>
+                            <cs:element name="albaran" type="string"/>
+                            <cs:element name="pago" type="decimal"/>
+                        </cs:sequence>
+                    </cs:complexType>
+                </cs:element>
+            </cs:sequence>
+        </cs:complexType>
+    </cs:element>
+</cs:schema>

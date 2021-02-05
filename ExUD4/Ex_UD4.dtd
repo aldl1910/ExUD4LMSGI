@@ -1,0 +1,20 @@
+<!ELEMENT sucursal (exposicion|gestion)*>
+<!ELEMENT exposicion (pedido|articulos)*>
+<!ELEMENT pedido (datos|direcciones|codigo|NomTra|fecha|Obs)*>
+<!ELEMENT datos (#PCDATA)>
+<!ELEMENT direcciones (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ATTLIST codigo codSuc CDATA #REQUIRED>
+<!ELEMENT NomTra (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT Obs (#PCDATA)>
+<!ELEMENT articulos (cod|UniPed|Precio|Obse|Plazo)*>
+<!ATTLIST cod codArt CDATA #REQUIRED>
+<!ELEMENT cod (#PCDATA)>
+<!ELEMENT UniPed (#PCDATA)>
+<!ELEMENT Precio (#PCDATA)>
+<!ELEMENT Obse (#PCDATA)>
+<!ELEMENT Plazo (#PCDATA)>
+<!ELEMENT gestion (albaran|pago)*>
+<!ELEMENT albaran (#PCDATA)>
+<!ELEMENT pago (#PCDATA)>
