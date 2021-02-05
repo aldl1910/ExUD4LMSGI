@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sucursal SYSTEM "Ex_UD4.xsd">
+<sucursal>
+    <exposicion>
+        <pedido>
+            <datos></datos>
+            <direcciones>Calle del Perdón</direcciones>
+            <codigo codSuc="A_______"></codigo>
+            <NomTra>Rosa Perez</NomTra>
+            <fecha>2001/10/19</fecha>
+            <Obs></Obs>
+        </pedido>
+        <articulos>
+            <cod codArt="AAA-777"></cod>
+            <UniPed></UniPed>
+            <Precio></Precio>
+            <Obse ></Obse>
+            <Plazo></Plazo>
+        </articulos>
+    </exposicion>
+    <gestion>
+        <albaran></albaran>
+        <pago></pago>
+    </gestion>
+</sucursal>
